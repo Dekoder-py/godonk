@@ -1,3 +1,15 @@
 [gd_scene format=3 uid="uid://b28jh5pusek1q"]
 
+[ext_resource type="Script" uid="uid://wyh6lkt4srj7" path="res://scripts/player.gd" id="1_3vyb7"]
+
 [node name="Player" type="CharacterBody2D" unique_id=2048847174]
+script = ExtResource("1_3vyb7")
+
+[node name="Camera" type="Camera2D" parent="." unique_id=1785094776]
+zoom = Vector2(4, 4)
+position_smoothing_enabled = true
+position_smoothing_speed = 1.0
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=1627372146]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=37153919]
